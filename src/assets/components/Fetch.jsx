@@ -22,7 +22,9 @@ export default function Fetch() {
     <div>
       <h1>User List</h1>
       {dataApi.map((user) => (
-        <p key={user.id}>{user.name}</p>
+        <p key={user.id}>
+          <strong>Id:</strong> {user.id}   <strong>Name:</strong> {user.name}
+        </p>
       ))}
     </div>
   );
